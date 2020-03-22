@@ -1,0 +1,7 @@
+requests[security]
+gevent
+urllib3
+pyyaml
+lxml
+pyjks
+pyOpenSSL
