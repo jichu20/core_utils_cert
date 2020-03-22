@@ -14,7 +14,9 @@ source /Users/borja.sanchez/Code/python/virtualenv/vmigration/bin/activate;
 
 Para instalar el paquete, ejecutamos el siguiente comando 
 
-```pip install git+git://github.com/jichu20/core_utils_cert```
+```sh
+pip install git+git://github.com/jichu20/core_utils_cert
+```
 
 ## Generación de jks
 
