@@ -10,6 +10,12 @@ Para ejecutar cualquier modulo, es necesario activar el entorno virtual ...
 source /Users/borja.sanchez/Code/python/virtualenv/vmigration/bin/activate;
 ```
 
+## Instalación 
+
+Para instalar el paquete, ejecutamos el siguiente comando 
+
+```pip install git+git://github.com/jichu20/core_utils_cert```
+
 ## Generación de jks
 
 Para generar un nuevo keystore, ejecutaremos el siguiente comando
@@ -24,7 +30,7 @@ Para ver todas las opciones disponobles de la generación de un keystore, ejecut
 python3 binaries_migration_utils.py generate_jks -h
 ```
 
-# Estra
+# Extra
 
 ## Instalación del modulo de utilidades
 
