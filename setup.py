@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="core_utils_cert-jichu20", # Replace with your own username
+    name="core_utils_cert-jichu20",
     version="0.1.1",
     author="Borja Sánchez",
     author_email="jichu20@gmail.com",
@@ -18,5 +18,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )
