@@ -1,6 +1,7 @@
-import OpenSSL
+import os
 import jks
 import ntpath
+import OpenSSL
 from OpenSSL import crypto
 
 
@@ -66,8 +67,9 @@ def create_keystore_from_p12(pfx_path, pfx_password, alias, list_of_ca=[], name=
 
 
 if __name__ == "__main__":
-    pfx_path = "path_to_p12"
-    pfx_password = "password"
-    globalrootca = "path_to_ca_1
-    globalissuingcainfrastructure = "path_to_ca_2"
-    create_keystore_from_p12(pfx_path, pfx_password, "cert-client", [globalrootca, globalissuingcainfrastructure])
+    
+    pfx_path = os.environ["PFX_PATH"]
+    pfx_password = os.environ["PFX_PWD"]
+    globalrootca_uno = os.environ["CA_1"]
+    globalrootca_dos = os.environ["CA_2"]
+    create_keystore_from_p12(pfx_path, pfx_password, "cert-client", [globalrootca_uno, globalrootca_dos])
