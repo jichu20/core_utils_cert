@@ -66,8 +66,8 @@ def create_keystore_from_p12(pfx_path, pfx_password, alias, list_of_ca=[], name=
 
 
 if __name__ == "__main__":
-    pfx_path = "/Users/borja.sanchez/Code/certs/seiri-play/etherId.p12"
-    pfx_password = "Mc6xVLLf"
-    globalrootca = "/Users/borja.sanchez/Code/certs/CA/work/globalrootca.crt"
-    globalissuingcainfrastructure = "/Users/borja.sanchez/Code/certs/CA/work/globalissuingcainfrastructure.crt"
-    create_keystore_from_p12(pfx_path, pfx_password, "seiri-client", [globalrootca, globalissuingcainfrastructure])
+    pfx_path = "path_to_p12"
+    pfx_password = "password"
+    globalrootca = "path_to_ca_1
+    globalissuingcainfrastructure = "path_to_ca_2"
+    create_keystore_from_p12(pfx_path, pfx_password, "cert-client", [globalrootca, globalissuingcainfrastructure])
