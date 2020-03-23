@@ -1,12 +1,22 @@
-from setuptools import setup
+import setuptools
 
-setup(
-    name="core_utils_cert",
-    version="0.1.0",
-    author="Borja Sánchez Yuste",
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="core_utils_cert-jichu20", # Replace with your own username
+    version="0.1.1",
+    author="Borja Sánchez",
     author_email="jichu20@gmail.com",
-    packages=["core", "core.crypto"],
-    description="Proeycto core de utilidades para la gestión de certificados.",
-    long_description=open("README.md").read(),
-    install_requires=["six >= 1.10.0"],
+    description="manager jks",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/jichu20/core_utils_cert",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
